@@ -22,6 +22,42 @@
     box-sizing: border-box;
     z-index: 100;
 }
+/* Style the navigation menu */
+.navbar-nav {
+  width: 100%;
+  overflow: auto;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #555;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: #000;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
 </style>
 <body>
    <div class="navbar-dark text-white">
@@ -40,11 +76,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a href="index.html" class="fa fa-home" style="font-size:22px;color:white">&nbsp;<strong> Home </strong></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="event.html" class="fa fa-bug" style="font-size:22px;color:white">&nbsp;<strong> Events</strong></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="achievements.html" class="fa fa-trophy" style="font-size:22px;color:white">&nbsp;<strong> Achievements</strong> </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="about.html" class="fa fa-info" style="font-size:22px;color:white">&nbsp;<strong> About ISC </strong> </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="contact.html" class="fa fa-user-secret" style="font-size:22px;color:white">&nbsp;<strong> Contact Us</strong> </a>
+                <a href="index.html" class="fa fa-home" style="font-size:20px;color:white">&nbsp;<strong> Home </strong></a>
+                <a href="event.html" class="fa fa-bug" style="font-size:20px;color:white">&nbsp;<strong> Events </strong> </a>
+                <a href="achievements.html" class="fa fa-trophy" style="font-size:20px;color:white">&nbsp;<strong> Achievements</strong> </a>
+                <a href="about.html" class="fa fa-info" style="font-size:20px;color:white">&nbsp;<strong> About ISC </strong> </a>
+                <a href="contact.html" class="fa fa-user-secret" style="font-size:20px;color:white">&nbsp;<strong> Contact Us</strong> </a>
              </div>
             </div>
           </nav>
