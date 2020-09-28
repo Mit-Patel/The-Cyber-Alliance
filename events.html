@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Events</title>
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- <link rel="stylesheet" media="screen" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/bootstrap4-neon-glow.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/event.css">
+
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/themify-icons.css" rel="stylesheet">
+    <link href='css/dosis-font.css' rel='stylesheet' type='text/css'>
+</head>
+<style>
+    html,
+    body {
+        margin: 0;
+        overflow-x: hidden;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #031321;
+        color: rgb(255, 255, 255, 0.9);
+    }
+    
+    #current_event {
+        /* position: absolute; */
+        top: 100px;
+        left: 50px;
+        right: 50px;
+        z-index: -1;
+        min-width: 100vw;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-transparent mb-0 radius-0 " style="font-family:Courier;">
+            <a href="#" class="navbar-brand">The Cyber Alliance</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="index.html" class="nav-item nav-link px-3"><i class="fa fa-home"></i></i> Home</a>
+                    <a href="events.html" class="nav-item nav-link px-3 active"><i class="fa fa-calendar"></i> Events</a>
+                    <a href="achievements.html" class="nav-item nav-link px-3 "><i class="fa fa-trophy"></i> Achievements</a>
+                    <a href="code-of-conduct.html" class="nav-item nav-link px-3"><i class="fa fa-terminal"></i> Code of Conduct</a>
+                    <a href="team-tca.html" class="nav-item nav-link px-3"><i class="fa fa-users"></i> Team TCA</a>
+                    <a href="about.html" class="nav-item nav-link px-3"> <i class="fa fa-info"></i> About TCA</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid " id="current_event">
+        <!-- Start: Header -->
+        <div class="row" id="home">
+            <div class="col-md-7 col-sm-12" style="padding:170px;font-family:Courier;">
+                <!-- <img src="img/meetup-logo.png" class="logo"> -->
+                <h1 class="display-3 text-white">
+                    <font face="courier">Meetup</font>
+                </h1>
+                <br>
+                <div class="webinar">
+                    <h1>Introducing The Cyber Alliance</h1>
+                    <h3>...</h3>
+
+                    <h4 style="line-height: 2;">3<sup>rd</sup> October, 2020</h4><br>
+                    <!-- <a href="#" class="btn btn-lg btn-red">Register Now</a> -->
+                    <button href="#" class="btn btn-lg btn-red btn-outline-dark btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left">Register Now</button>
+                </div>
+            </div>
+            <div class="col-md-5 hidden-xs" style="padding-right:100px;padding-top:100px;">
+                <img src="media/img-event/rocket.png" class="rocket animated bounce">
+            </div>
+        </div>
+        <!-- End: Header -->
+    </div>
+
+    <h1 style="text-align:center; font-size: 40px;">Event Details</h1>
+
+    <div class="container">
+        <div class="row me-row content-ct speaker" id="speakers" style="justify-content: center;">
+            <div class="col-md-3 col-sm-12 feature">
+                <!-- <img src="img/speaker-3.png" class="speaker-img"> -->
+                <span class="ti-ticket"></span>
+                <h3>Why Should one attend?</h3>
+                <p>Before diving into the deep sea of Cyber Security, one needs to be comfortable with Linux.Some of the Linux machines are specially built for penetration testing. The webinar will also help you to get started with shell scripting.</p>
+            </div>
+            <div class="col-md-5 col-sm-12 feature">
+                <img src="media/img-event/speaker-3.png" class="speaker-img">
+                <h3>Viral Parmar</h3>
+                <p>Cyber Security Expert.........................blah blah ......................blahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+                <ul class="speaker-social ">
+                    <li><a href="#"><span class="ti-facebook"></span></a></li>
+                    <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+                    <li><a href="#"><span class="ti-linkedin"></span></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-12 feature">
+                <span class="ti-world"></span>
+                <h3>Pre-Requisites!</h3>
+                <p>Just a laptop with any linux machine, and a keen interest to learn!</p>
+            </div>
+        </div>
+    </div>
+
+    <h1 style="padding-top: 50px;text-align:center;font-size: 40px;">Upcoming Events</h1><br><br>
+    <!-- Start: Schedule -->
+    <div class="container">
+        <div class="row" id="schedule">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="Image/Viral.jpeg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">October 10, 2020</h4>
+                                <hr>
+                                <h5>INTRODUCTION TO LINUX</h5>
+                                <p>...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="media/img-event/speaker-2.png" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Coming Soon...</h4>
+                                <hr>
+                                <!-- <h5>Coming Soon...</h5> -->
+                                <!-- <p>Coming Soon...</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="media/img-event/speaker-3.png" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Coming Soon...</h4>
+                                <hr>
+                                <!-- <h5>AN INTRODUCTION TO TOUCH AND POINTER EVENTS</h5> -->
+                                <!-- <p>Simon is designer and partner at Fictivekin and has worked in a variety of situations for bands, record labels, governments, polar explorers, and most other things. </p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="media/img-event/speaker-4.png" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Coming Soon...</h4>
+                                <hr>
+                                <!-- <h5>WEB FONTS PERFORMANCE</h5> -->
+                                <!-- <p>Simon is designer and partner at Fictivekin and has worked in a variety of situations for bands, record labels, governments, polar explorers, and most other things. </p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: Schedule -->
+
+
+    <!-- scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/lib/stats.js"></script>
+
+    <!-- stats.js -->
+    <script src="js/lib/stats.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>
