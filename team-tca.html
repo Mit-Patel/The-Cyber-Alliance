@@ -7,33 +7,128 @@
     <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
     <meta name="author" content="Vincent Garreau" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <!-- <link rel="stylesheet" media="screen" href="css/style.css"> -->
     <link rel="stylesheet" href="css/bootstrap4-neon-glow.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/scrollbar.css">
+    <!-- team member style -->
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;500&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        isDarkTheme = true;
+    </script>
 </head>
 <style>
     html,
-    body {
+    body {        
+        justify-content: space-around;
         margin: 0;
+        height: 100%;
         overflow-x: hidden;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: #031321;
         color: rgb(255, 255, 255, 0.9);
+        
     }
-    
-    #myVideo {
-        position: absolute;
-        top: 0;
+    /*CSS for card*/
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: .5rem;
+}
+   .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+    text-align: center;
+    padding-top: 90px;
+  background-color: #32334a;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.cool {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        /*padding-right: 30px;*/
+        padding-left: 55px;
+        margin-left: auto;
+        margin-right: auto;
+}
+    .center {
+        
+        align-content: center;
+        padding: 0 80px;
+        word-wrap: normal;
+    }
+      
+    .cool1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;  }
+        @media screen and (min-width: 350px) and (max-width: 375px){
+            .cool1 {
+                width : 93.9%;
+        }  }
+        @media screen and (min-width: 376px) and (max-width: 420px){
+            .cool1 {
+                width : 85%;
+        }  }
+        @media screen and (max-width: 576px) and (min-width: 421px) {
+           .cool1 {
+              width:70%;}}
+
+    footer {
+        padding-top: 10px;
         left: 0;
-        z-index: -1;
-        min-width: 100vw;
-        min-height: 100vh;
-        max-width: 100vw;
-        max-height: 100vh;
-        object-fit: fill;
+        bottom: 0;
+        height: 80px;
+        width: 100%;
+        background-color: grey;
+        color: rgb(255, 255, 255, 0.8);
+        text-align: center;
     }
+ 
+
 </style>
 
 <body>
@@ -47,7 +142,7 @@
                 <div class="navbar-nav ml-auto">
                     <a href="index.html" class="nav-item nav-link px-3"><i class="fa fa-home"></i></i> Home</a>
                     <a href="events.html" class="nav-item nav-link px-3 "><i class="fa fa-calendar"></i> Events</a>
-                    <a href="achievements.html" class="nav-item nav-link px-3"><i class="fa fa-trophy"></i> Achievements</a>
+                    <a href="achievements.html" class="nav-item nav-link px-3 "><i class="fa fa-trophy"></i> Achievements</a>
                     <a href="code-of-conduct.html" class="nav-item nav-link px-3"><i class="fa fa-terminal"></i> Code of Conduct</a>
                     <a href="team-tca.html" class="nav-item nav-link px-3 active"><i class="fa fa-users"></i> Team TCA</a>
                     <a href="about.html" class="nav-item nav-link px-3"> <i class="fa fa-info"></i> About TCA</a>
@@ -55,9 +150,481 @@
             </div>
         </nav>
     </header>
-    <video autoplay muted loop id="myVideo">
-      <source src="media/cs2.mp4" type="video/mp4">
-    </video>
+<br>
+<div style="font-family: 'Grenze Gotisch', cursive; font-weight: 400; text-align: center; color:  #f29909;" >
+    <h2>Team Mentor</h2>
+</div>
+<br>
+        <!---Mentor pic --->
+        <div class="cool">
+                <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Priyank.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Priyank Parmar</h1> 
+                      <p>Mentor</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+<div style="font-family: 'Grenze Gotisch', cursive; font-weight: 400; text-align: center; color:#09b8f2;" >
+    <h2>Team Members</h2>
+</div>
+<br>
+<div class="cool1 col-sm|md|lg|xl-auto ">
+    <div class="card-deck">
+        <!--- 1st pic --->
+        <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Mit.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Mit</h1> 
+                      <p>Leader</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <!--- 2nd pic --->               
+        <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Atri.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Atri</h1> 
+                      <p>HR</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+           </div>
+       </div>
+       <!--- 3rd pic --->
+       <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Riti.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Riti</h1> 
+                      <p>HR</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <!--- 4th pic --->               
+        <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Ridham.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Ridham</h1> 
+                      <p>Webinar</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+           </div>
+       </div>
+
+        <!--- 5th pic --->
+        <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Viral.jpeg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Viral</h1> 
+                      <p>Live Sessions</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+
+        <!--- 6thpic --->
+        <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Akshat.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Akshat</h1> 
+                      <p>Social Media Management</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+
+        <!--- 7th pic --->               
+        <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Tanay.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Tanay</h1> 
+                      <p>Social Media Management</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+           </div>
+       </div>
+
+        <!--- 8th pic --->
+        <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Gayatri.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Gayatri</h1> 
+                      <p>Web Developer</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <!--- 9th pic --->               
+        <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Jenil.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Jenil</h1> 
+                      <p>Web Developer</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+           </div>
+       </div>
+       <!--- 10th pic --->
+       <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Zaid.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Zaid</h1> 
+                      <p>Web Developer</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <!--- 11th pic --->
+        <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Raj.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Raj</h1> 
+                      <p>Web Developer</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+           </div>
+       </div>
+
+        <!--- 12th pic --->
+        <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Rutambhara.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Rutambhara</h1> 
+                      <p>Web Developer</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <!--- 13th pic --->
+        <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Bhakti.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Bhakti</h1> 
+                      <p>Creative & Graphics</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+         <!--- 14th pic --->
+         <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Nidhi.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Nidhi</h1> 
+                      <p>CTF Developer</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+           </div>
+       </div>
+
+        <!--- 15th pic --->
+         <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Rushi.png" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Rushi</h1> 
+                      <p>CTF Developer</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+           </div>
+       </div>
+
+        <!--- 16th pic --->
+        <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Viren.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Viren</h1> 
+                      <p>CTF Developer</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <!--- 17th pic --->               
+        <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Kesha.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Kesha</h1> 
+                      <p>CTF Developer</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+           </div>
+       </div>
+        <!--- 18th pic --->
+        <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Mrunal.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Mrunal</h1> 
+                      <p>CTF Developer</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+        
+        <!--- 19th pic --->
+         <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Prinesha.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Prinesha</h1> 
+                      <p>Content Writer</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+           </div>
+       </div>
+        <!--- 20th pic --->               
+        <div class="mb-3 ml-2 mr-5">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image/Drashti.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Drashti</h1> 
+                      <p>Content Writer</p>
+                      <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-github"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>  
+                            <a href="#"><i class="fa fa-facebook"></i></a> 
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                       </div>
+                    </div>
+              </div>
+           </div>
+       </div>
+    </div>
+</div>
+
+
+<br>
+<footer>
+        <div style="">
+            <p>The Cyber Alliance</p>
+            <p>Copyright &copy; 2020. All Rights Reserved</p>
+        </div>
+</footer>
     <!-- scripts -->
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
