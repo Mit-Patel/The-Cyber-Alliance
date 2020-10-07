@@ -25,6 +25,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: create output
         run: |
+          echo | pwd,
           sudo mkdir output,
           sudo cp -r . /output
 
