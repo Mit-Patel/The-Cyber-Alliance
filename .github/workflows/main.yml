@@ -43,8 +43,8 @@ jobs:
           # Source directory from the origin directory
           source-directory: .
           # Name of the destination username/organization
-          destination-github-username: "Mit-Patel"
+          destination-github-username: "thecyberalliance"
           # Destination repository
-          destination-repository-name: "test"
+          destination-repository-name: "thecyberalliance.github.io"
           # Email for the git commit
-          user-email: "patelmit2012@gmail.com"
+          user-email: "tca_sitaics@gmail.com"
