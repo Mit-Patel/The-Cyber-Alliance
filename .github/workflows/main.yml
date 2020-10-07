@@ -23,10 +23,10 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: create output
-        run: |          
-          sudo mkdir output,
-          sudo cp -r . /output
+      #- name: create output
+      #  run: |          
+      #    sudo mkdir output,
+      #    sudo cp -r . /output
 
       # Runs a set of commands using the runners shell
      # - name: Run a multi-line script
@@ -41,7 +41,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           # Source directory from the origin directory
-          source-directory: "output"
+          source-directory: .
           # Name of the destination username/organization
           destination-github-username: "Mit-Patel"
           # Destination repository
