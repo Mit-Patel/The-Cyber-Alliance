@@ -47,7 +47,7 @@ jobs:
           # Destination repository
           destination-repository-name: "thecyberalliance.github.io"
           # Email for the git commit
-          user-email: "tca_sitaics@gmail.com"
+          user-email: "tca.sitaics@gmail.com"
           # Destination Username
           destination-repository-username: "thecyberalliance"
           # Target Branch for the git commit
