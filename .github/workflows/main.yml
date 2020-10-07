@@ -24,8 +24,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: create output
-        run: |
-          echo | pwd,
+        run: |          
           sudo mkdir output,
           sudo cp -r . /output
 
@@ -38,6 +37,8 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: cpina/github-action-push-to-another-repository@637125d2256c6612875516875c0e715afb799614
         uses: cpina/github-action-push-to-another-repository@v1.1
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           # Source directory from the origin directory
           source-directory: "output"
