@@ -37,24 +37,7 @@
 </style>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-transparent mb-0 radius-0 " style="font-family:Courier;">
-            <a href="#" class="navbar-brand">The Cyber Alliance</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="index.html" class="nav-item nav-link px-3"><i class="fa fa-home"></i></i> Home</a>
-                    <a href="events.html" class="nav-item nav-link px-3 "><i class="fa fa-calendar"></i> Events</a>
-                    <a href="achievements.html" class="nav-item nav-link px-3 active"><i class="fa fa-trophy"></i> Achievements</a>
-                    <a href="code-of-conduct.html" class="nav-item nav-link px-3"><i class="fa fa-terminal"></i> Code of Conduct</a>
-                    <a href="team-tca.html" class="nav-item nav-link px-3"><i class="fa fa-users"></i> Team TCA</a>
-                    <a href="about.html" class="nav-item nav-link px-3"> <i class="fa fa-info"></i> About TCA</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <header></header>
     <video autoplay muted loop id="myVideo">
       <source src="media/cs2.mp4" type="video/mp4">
     </video>
@@ -68,6 +51,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            createNav(["", "", "", "active", "", ""], "");
+            // createFooter();
+        });
+    </script>
 </body>
 
 </html>

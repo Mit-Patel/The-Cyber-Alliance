@@ -3,10 +3,15 @@
 
 <head>
     <meta charset="utf-8">
+
     <title>The Cyber Alliance - TCA</title>
-    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
-    <meta name="author" content="Vincent Garreau" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="description" content="An Information Security Student's Club at Rashtriya Raksha University">
+    <meta name="author" content="The Cyber Alliance - TCA" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link rel="stylesheet" media="screen" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap4-neon-glow.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,78 +23,92 @@
     body {
         margin: 0;
         height: 100%;
-        overflow: hidden
+        /* overflow: hidden */
     }
     
-    .panel {
-        font-family: 'Source Sans Pro';
+    .container-fluid {
+        font-family: Courier;
         /* font-size: 1em; */
         position: absolute;
-        z-index: 10;
-        background: #eee;
-        border-radius: 4px;
-        box-sizing: border-box;
         z-index: 100;
+        width: 100%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+    
+    .panel h1 {
+        font-family: Courier, monospace;
+    }
+    
+    .panel div {
+        font-family: Courier, monospace;
+    }
+    
+    #particles-js {
+        position: absolute;
+    }
+    
+    .content::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .content {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
     }
 </style>
 
 <body>
+    <!-- particles.js container -->
     <div id="particles-js">
-        <nav class="navbar navbar-expand-md navbar-dark  bg-transparent mb-0 radius-0 " style="font-family:Courier;">
-            <a href="#" class="navbar-brand">The Cyber Alliance</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="index.html" class="nav-item nav-link active px-3"><i class="fa fa-home"></i></i> Home</a>
-                    <a href="events.html" class="nav-item nav-link px-3 "><i class="fa fa-calendar"></i> Events</a>
-                    <a href="achievements.html" class="nav-item nav-link px-3 "><i class="fa fa-trophy"></i> Achievements</a>
-                    <a href="code-of-conduct.html" class="nav-item nav-link px-3  "><i class="fa fa-terminal"></i> Code of Conduct</a>
-                    <a href="team-tca.html" class="nav-item nav-link px-3  "><i class="fa fa-users"></i> Team TCA</a>
-                    <a href="about.html" class="nav-item nav-link px-3 "> <i class="fa fa-info"></i> About TCA</a>
-                </div>
-            </div>
-        </nav>
-
-        <!-- particles.js container -->
-        <div class="panel jumbotron bg-transparent mb-0 radius-0">
-            <div class="container">
+        <div class="container-fluid mt-3 content">
+            <div class="panel jumbotron bg-transparent mb-0 radius-0">
                 <div class="row">
-                    <div class="col-xl-8">
-                        <h1 class="display-2 text-white">
-                            <font face="courier">The Cyber Allianc<span class="vim-caret backWhite">e</span></font>
-                        </h1>
-                        <div class="lead mb-3 text-mono text-success">
-                            <font face="courier">Hack. Patch. Repeat.</font>
-                        </div>
-                        <div class="text-darkgrey text-mono my-2 text-success">
-                            <font face="courier">Let's Learn, Grow & Hack Together</font>
-                            <!-- <p class="mt-5 text-grey text-spacey"><font face = "courier">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Architecto, dignissimos provident. Alias, aliquid, cum cumque
-                                deleniti dignissimos eos exercitationem explicabo illum
-                                inventore laboriosam nihil nobis nostrum praesentium recusandae
-                                sequi, sint!</font>
-                            </p> -->
-                        </div>
-                        <div style="font-family:Courier;">
-                            <button href="#" class="btn btn btn-outline-light btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left ">Join the squad</button>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="display: flex;justify-content: center;align-items: center;">
+                        <img src="media/logo-2.png" alt="TCA Logo" width="500px">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div>
+                            <h1 class="display-2 text-white">The Cyber</h1>
+                            <h1 class="display-2 text-white">Allianc<span class="vim-caret backWhite">e</span></h1>
+
+                            <div class="lead mb-3 text-mono text-success">
+                                Hack. Patch. Repeat.
+                            </div>
+                            <div class="text-darkgrey text-mono my-2 text-success">
+                                Let's Learn, Grow & Hack Together
+                            </div>
+                            <div style="font-family:Courier;">
+                                <button href="#" class="btn btn btn-outline-light btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left ">Join the squad</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- scripts -->
-        <script src="js/particles.js"></script>
-        <script src="js/app.js"></script>
-        <script src="js/lib/stats.js"></script>
 
-        <!-- stats.js -->
-        <script src="js/lib/stats.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <div class="fixed-bottom pb-4 text-white text-center">
+            In Association with Student Development Cell at <a href="https://rsu.ac.in/home/">Rashtriya Raksha University</a><br /> Managed by students of <a href="https://rsu.ac.in/school-of-information-technology-and-cyber-security/">SITAICS</a>
+        </div>
+    </div>
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            createNav(["active", "", "", "", "", ""], "fixed-top");
+        });
+    </script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/lib/stats.js"></script>
+    <!-- stats.js -->
+    <script src="js/lib/stats.js"></script>
 </body>
 
 </html>

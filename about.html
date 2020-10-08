@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/scrollbar.css">
+
     <script type="text/javascript">
         isDarkTheme = true;
     </script>
@@ -58,12 +59,6 @@
         background-color: #32334a;
     }
     
-    footer {
-        margin: 50px;
-        text-align: center;
-        color: rgb(255, 255, 255, 0.8);
-    }
-    
     hr {
         background-color: gainsboro;
         margin: 50px auto;
@@ -72,24 +67,7 @@
 </style>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-transparent mb-0 radius-0 " style="font-family:Courier;">
-            <a href="#" class="navbar-brand">The Cyber Alliance</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="index.html" class="nav-item nav-link px-3"><i class="fa fa-home"></i></i> Home</a>
-                    <a href="events.html" class="nav-item nav-link px-3 "><i class="fa fa-calendar"></i> Events</a>
-                    <a href="achievements.html" class="nav-item nav-link px-3 "><i class="fa fa-trophy"></i> Achievements</a>
-                    <a href="code-of-conduct.html" class="nav-item nav-link px-3"><i class="fa fa-terminal"></i> Code of Conduct</a>
-                    <a href="team-tca.html" class="nav-item nav-link px-3"><i class="fa fa-users"></i> Team TCA</a>
-                    <a href="about.html" class="nav-item nav-link px-3 active"> <i class="fa fa-info"></i> About TCA</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <header></header>
     <section>
         <div>
             <div>
@@ -101,13 +79,14 @@
             <hr>
             <div>
                 <h1 style="color:#00CED1;font-size:40px;font-family:Courier;margin:30px;margin-top: 50px;" align="center">Activities</h1>
-                <div class="card-deck center" >
+                <div class="card-deck center">
                     <div class="card card-body h-100 shadow p-3 mb-5 rounded" align="center">
                         <div align="center">
                             <span class="fa-stack fa-4x"><i class="fa fa-group fa-stack-4x"></i></span>
                         </div>
                         <h4 class="card-title text-center">Live Session</h4>
-                        <p class="card-text  text-center"> We will conduct Live sessions and webinars for the students who are going to put their first step in the Information Security Domain. Gradually, we will increase the level of the sessions & webinars engaging the students in more of a practical environment along with theoretical knowledge </p>
+                        <p class="card-text  text-center"> We will conduct Live sessions and webinars for the students who are going to put their first step in the Information Security Domain. Gradually, we will increase the level of the sessions & webinars engaging the students in more
+                            of a practical environment along with theoretical knowledge </p>
                     </div>
                     <div class="card card-body h-100 shadow p-3 mb-5 rounded" align="center">
                         <div align="center">
@@ -115,7 +94,7 @@
                         </div>
                         <h4 class="card-title text-center">Capture The Flag</h4>
                         <p class="card-text  text-center"> We will post CTF challenges specifically for the club's members every week or every month so that they can measure their skills and improve themselves by taking the guidance from the experts <br><br></p>
-                        
+
                     </div>
                 </div>
                 <div class="card-deck center">
@@ -132,7 +111,7 @@
                         </div>
                         <h4 class="card-title text-center">Quiz Competition</h4>
                         <p class="card-text  text-center"> Organizing Quizzes for testing their ideas, showing of the talent, sharpening their Infosec knowledge <br><br></p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -173,10 +152,9 @@
         </div>
     </section>
     <footer>
-        <div>
-            <p>The Cyber Alliance</p>
-            <p>Copyright &copy; 2020. All Rights Reserved</p>
-        </div>
+        <!-- <div>
+            In Association with Student Development Cell at <a href="https://rsu.ac.in/home/">Rashtriya Raksha University</a><br /> Managed by students of <a href="https://rsu.ac.in/school-of-information-technology-and-cyber-security/">SITAICS</a>
+        </div> -->
     </footer>
     <!-- scripts -->
     <script src="js/particles.js"></script>
@@ -188,6 +166,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            createNav(["", "active", "", "", "", ""], "");
+            createFooter();
+        });
+    </script>
 </body>
 
 </html>
