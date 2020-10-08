@@ -103,8 +103,8 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
+        /* padding-right: 15px;
+        padding-left: 15px;*/
         margin-right: auto;
         margin-left: auto;
     }
@@ -144,14 +144,13 @@
                         <img src="Image/Priyank.jpg" alt="Avatar" style="width:300px;height:300px;">
                     </div>
                     <div class="flip-card-back">
-                        <h1>Priyank Parmar</h1>
-                        <p>Mentor</p>
+                        <h2>Priyank Parmar</h2>
+                        <h5>Mentor</h5>
                         <div style="margin: 24px 0;">
-                            <a href="#"><i class="fa fa-github"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="#"><i class="fa fa-fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-github fa-2x text-white"></i></a>
+                            <a href="#"><i class="fa fa-twitter fa-2x text-white"></i></a>
+                            <a href="#"><i class="fa fa-linkedin fa-2x text-white"></i></a>
+                            <a href="#"><i class="fa fa-instagram fa-2x text-white"></i></a>
                         </div>
                     </div>
                 </div>
@@ -175,6 +174,7 @@
     </footer>
 
     <!-- scripts -->
+
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
     <script src="js/lib/stats.js"></script>
@@ -187,26 +187,157 @@
 
     <script>
         var files = [{
+            image: "Mit.jpg",
+            name: "Mit Patel",
+            pos: "Leader",
+            github: "https://github.com/Mit-Patel/",
+            twitter: "https://twitter.com/AstarkIV",
+            linkedin: "https://www.linkedin.com/in/mitpatel67/",
+        }, {
+            image: "Atri.jpg",
+            name: "Atri Joshi",
+            pos: "HR",
+            github: "https://github.com/akjoshi12",
+            twitter: "https://google.com",
+            linkedin: "https://www.linkedin.com/in/atri-j-4b67b8118/",
+            instagram: "https://www.instagram.com/a_k_joshi12/?hl=en",
+            facebook: "https://www.facebook.com/atri.joshi.90/", //// facebook
+        }, {
+            image: "Riti.jpg",
+            name: "Riti	Dobariya",
+            pos: "HR",
+            github: "https://github.com/RitiDobariya",
+            linkedin: "https://www.linkedin.com/in/riti-dobariya-851755197/",
+            instagram: "https://instagram.com/alafred_doll_?igshid=t8z8xxeq9zbn",
+        }, {
+            image: "Bhakti.jpg",
+            name: "Bhakti Rana",
+            pos: "Creative & Graphics",
+            twitter: "https://twitter.com/philogamist",
+            linkedin: "https://www.linkedin.com/in/bhaktirana/",
+            instagram: "https://www.instagram.com/bhaktirana/",
+            behance: "https://www.behance.net/brana66", ////add Behance tag
+        }, {
+            image: "Drashti.jpg",
+            name: "Drashti Dobariya",
+            pos: "Content Writer",
+            github: "https://github.com/DrashtiDobariya",
+            twitter: "https://twitter.com/drashti_____",
+            instagram: " https://instagram.com/drashti_dobariya_",
+        }, {
+            image: "Prinesha.jpg",
+            name: "Prinesha Dobariya",
+            pos: "Content Writer",
+            github: "https://github.com/Prinesha5102",
+            linkedin: "https://www.linkedin.com/in/prinesha-dobariya-34a5851a2",
+        }, {
             image: "Akshat.jpg",
             name: "Akshat Soni",
             pos: "Social Media Manager",
-            github: "https://google.com",
-            twitter: "https://google.com",
-            linkedin: "https://google.com",
+            github: "https://github.com/akshatsoni64",
+            twitter: "https://twitter.com/akshat_soni64",
+            linkedin: "https://linkedin.com/in/akshatsoni64",
+            instagram: "https://instagram.com/akshatsoni64",
         }, {
-            image: "Atri.jpg",
-            name: "Akshat Soni",
+            image: "Tanay.jpg",
+            name: "Tanay Yadav",
             pos: "Social Media Manager",
-            github: "https://google.com",
-            twitter: "https://google.com",
-            instagram: "https://google.com",
+            github: "https://github.com/Dark10Shooter",
+            twitter: "https://twitter.com/TanayYadav1010",
+            linkedIn: "https://www.linkedin.com/in/tanay-yadav-714275181",
+            instagram: "https://www.instagram.com/dark10shooter/",
+            facebook: "https://m.facebook.com/tanayyadav1010", //// facebook
         }, {
-            image: "Bhakti.jpg",
-            name: "Akshat Soni",
-            pos: "Social Media Manager",
-            github: "https://google.com"
-        }, ];
-
+            image: "Viral.jpeg",
+            name: "Viral Parmar",
+            pos: "Live Sessions",
+            github: "https://github.com/vral-parmar",
+            twitter: "https://twitter.com/vral_parmar",
+            linkedin: "https://www.linkedin.com/in/viralparmar93/",
+            instagram: "https://www.instagram.com/vral_parmar/",
+        }, {
+            image: "Ridham.jpg",
+            name: "Ridham Joshi",
+            pos: "Webinar",
+            github: "",
+            twitter: "",
+            linkedin: "",
+            instagram: "",
+        }, {
+            image: "Gayatri.jpg",
+            name: "Gayatri Priyadarsini",
+            pos: "Web Developer",
+            github: "https://github.com/KK-GAYATRI-P/",
+            linkedin: "https://www.linkedin.com/in/gayatri-priyadarsini-22638b193",
+        }, {
+            image: "Rutambhara.jpg",
+            name: "Rutambhara Patil",
+            pos: "Web Developer",
+            github: "https://github.com/Rutambhara-10",
+            twitter: "https://twitter.com/RutambharaPatil",
+            linkedin: "https://www.linkedin.com/in/rutambhara-patil-6a1483192/",
+            instagram: "https://www.instagram.com/_.iamrutu._/",
+        }, {
+            image: "Zaid.jpg",
+            name: "Mohamadzaid Shaikh",
+            pos: "Web Developer",
+            github: "",
+            twitter: "",
+            linkedin: "",
+            instagram: "",
+        }, {
+            image: "Jenil.jpg",
+            name: "Jenil Patel",
+            pos: "Web Developer",
+            github: "https://github.com/coolJp9",
+            twitter: "https://twitter.com/_jEnIl_PaTeL",
+            linkedin: "https://www.linkedin.com/in/cooljp9",
+        }, {
+            image: "Raj.jpg",
+            name: "Raj Kotadiya",
+            pos: "Web Developer",
+            github: "https://github.com/Rajkotadiya",
+            twitter: "https://twitter.com/Rajkotadiya16",
+            linkedin: "https://www.linkedin.com/in/raj-kotadiya-397504172",
+            instagram: "https://www.instagram.com/raj_kotadiya001",
+        }, {
+            image: "Nidhi.jpg",
+            name: "Nidhi Shah",
+            pos: "CTF Developer",
+            github: "https://github.com/Nshah-02",
+            linkedin: "https://www.linkedin.com/in/nidhi-shah-107b431a1",
+        }, {
+            image: "Kesha.jpg",
+            name: "Kesha Kaneria",
+            pos: "CTF Developer",
+            github: "https://github.com/keshakaneria",
+            twitter: "https://twitter.com/KaneriaKesha",
+            linkedin: "https://www.linkedin.com/in/kesha-k-kaneria/",
+        }, {
+            image: "Viren.jpg",
+            name: "Viren Munjani",
+            pos: "CTF Developer",
+            github: "",
+            twitter: "",
+            linkedin: "",
+            instagram: "",
+        }, {
+            image: "Rushi.PNG",
+            name: "Rushi Mamtora",
+            pos: "CTF Developer",
+            github: "",
+            twitter: "",
+            linkedin: "",
+            instagram: "",
+        }, {
+            image: "Mrunal.jpg",
+            name: "Mrunal Chawda",
+            pos: "CTF Developer",
+            github: "",
+            twitter: "",
+            linkedin: "",
+            instagram: "",
+        }];
 
         files.forEach(file => {
 
@@ -218,21 +349,21 @@
                 '<img src="Image/' + file.image + '" alt="Avatar" style="width:300px;height:300px;">' +
                 '</div>' +
                 '<div class="flip-card-back">' +
-                '<h1>' + file.name + '</h1>' +
-                '<p>' + file.pos + '</p>' +
+                '<h2>' + file.name + '</h2>' +
+                '<h5>' + file.pos + '</h5>' +
                 '<div style="margin: 24px 0;">';
 
             if (file.hasOwnProperty("github")) {
-                text += '<a href="' + file.github + '"><i class="fa fa-github"></i></a>';
+                text += '<a href="' + file.github + '"><i class="fa fa-github fa-2x text-white"></i></a>';
             }
             if (file.hasOwnProperty("twitter")) {
-                text += '<a href="' + file.twitter + '"><i class="fa fa-twitter"></i></a>';
+                text += '<a href="' + file.twitter + '"><i class="fa fa-twitter fa-2x text-white"></i></a>';
             }
             if (file.hasOwnProperty("linkedin")) {
-                text += '<a href="' + file.linkedin + '"><i class="fa fa-linkedin"></i></a>';
+                text += '<a href="' + file.linkedin + '"><i class="fa fa-linkedin fa-2x text-white"></i></a>';
             }
             if (file.hasOwnProperty("instagram")) {
-                text += '<a href="' + file.instagram + '"><i class="fa fa-instagram"></i></a>';
+                text += '<a href="' + file.instagram + '"><i class="fa fa-instagram fa-2x text-white"></i></a>';
             }
 
             text += '</div>' + '</div>' + '</div>' + '</div>' + '</div>';
