@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Team TCA</title>
-    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
-    <meta name="author" content="Vincent Garreau" />
+    <meta name="description" content="Team TCA - The team of students who bring awesome infosec stuff to you.">
+    <meta name="author" content="The Cyber Alliance - TCA" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- <link rel="stylesheet" media="screen" href="css/style.css"> -->
@@ -86,8 +86,8 @@
         flex-direction: row;
         justify-content: center;
         width: 100%;
-        /*padding-right: 30px;*/
-        padding-left: 55px;
+        /* padding-right: 30px; */
+        /* padding-left: 55px; */
         margin-left: auto;
         margin-right: auto;
     }
@@ -100,31 +100,19 @@
     
     .cool1 {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: center;
         width: 100%;
-        /* padding-right: 15px;
-        padding-left: 15px;*/
+        padding-right: 5%;
+        padding-left: 5%;
         margin-right: auto;
         margin-left: auto;
     }
     
-    @media screen and (min-width: 350px) and (max-width: 375px) {
-        .cool1 {
-            width: 93.9%;
-        }
-    }
-    
-    @media screen and (min-width: 376px) and (max-width: 420px) {
-        .cool1 {
-            width: 85%;
-        }
-    }
-    
-    @media screen and (max-width: 576px) and (min-width: 421px) {
-        .cool1 {
-            width: 70%;
-        }
+    #imagesDiv {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
     }
 </style>
 
@@ -137,7 +125,7 @@
     <br>
     <!---Mentor pic --->
     <div class="cool">
-        <div class="mb-3 ml-2 mr-5">
+        <div class="mb-5">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -145,13 +133,7 @@
                     </div>
                     <div class="flip-card-back">
                         <h2>Priyank Parmar</h2>
-                        <h5>Mentor</h5>
-                        <div style="margin: 24px 0;">
-                            <a href="#"><i class="fa fa-github fa-2x text-white"></i></a>
-                            <a href="#"><i class="fa fa-twitter fa-2x text-white"></i></a>
-                            <a href="#"><i class="fa fa-linkedin fa-2x text-white"></i></a>
-                            <a href="#"><i class="fa fa-instagram fa-2x text-white"></i></a>
-                        </div>
+                        <h5 class="text-grey">Mentor</h5>
                     </div>
                 </div>
             </div>
@@ -172,15 +154,6 @@
     <footer>
 
     </footer>
-
-    <!-- scripts -->
-
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/lib/stats.js"></script>
-
-    <!-- stats.js -->
-    <script src="js/lib/stats.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -216,7 +189,7 @@
             twitter: "https://twitter.com/philogamist",
             linkedin: "https://www.linkedin.com/in/bhaktirana/",
             instagram: "https://www.instagram.com/bhaktirana/",
-            behance: "https://www.behance.net/brana66", ////add Behance tag
+            behance: "https://www.behance.net/brana66",
         }, {
             image: "Drashti.jpg",
             name: "Drashti Dobariya",
@@ -258,11 +231,11 @@
         }, {
             image: "Ridham.jpg",
             name: "Ridham Joshi",
-            pos: "Webinar",
-            github: "",
-            twitter: "",
-            linkedin: "",
-            instagram: "",
+            pos: "Webinars & Workshops",
+            github: "https://github.com/rj-joshi",
+            twitter: "https://twitter.com/rj_joshi_5",
+            linkedin: "https://www.linkedin.com/in/ridham-joshi-41b6b8152/",
+            instagram: "https://www.instagram.com/ridham125/",
         }, {
             image: "Gayatri.jpg",
             name: "Gayatri Priyadarsini",
@@ -279,12 +252,12 @@
             instagram: "https://www.instagram.com/_.iamrutu._/",
         }, {
             image: "Zaid.jpg",
-            name: "Mohamadzaid Shaikh",
+            name: "MohammedZaid Shaikh",
             pos: "Web Developer",
-            github: "",
-            twitter: "",
-            linkedin: "",
-            instagram: "",
+            github: "https://github.com/Zaidmessi",
+            twitter: "https://twitter.com/Zaidmessi97",
+            linkedin: "https://www.linkedin.com/in/zaid-shaikh-072302147",
+            instagram: "https://www.instagram.com/Zaidmessi10/",
         }, {
             image: "Jenil.jpg",
             name: "Jenil Patel",
@@ -301,11 +274,49 @@
             linkedin: "https://www.linkedin.com/in/raj-kotadiya-397504172",
             instagram: "https://www.instagram.com/raj_kotadiya001",
         }, {
+            image: "RajP.jpg",
+            name: "Raj Patel",
+            pos: "Web Developer",
+            linkedin: "https://www.linkedin.com/in/raj-patel-934174199",
+            instagram: "https://www.instagram.com/rajpatel3131/",
+        }, {
             image: "Nidhi.jpg",
             name: "Nidhi Shah",
-            pos: "CTF Developer",
+            pos: "CTF Developer & Manager",
             github: "https://github.com/Nshah-02",
             linkedin: "https://www.linkedin.com/in/nidhi-shah-107b431a1",
+        }, {
+            image: "Rushi.PNG",
+            name: "Rushi Mamtora",
+            pos: "CTF Developer & Bug Bounty",
+            github: "https://github.com/Rushimamtora/",
+            twitter: "https://twitter.com/MamtoraRushi",
+            linkedin: "https://www.linkedin.com/in/rushi-mamtora-1a7132171/",
+            instagram: "https://www.instagram.com/rushi_mamtora/",
+        }, {
+            image: "Mrunal.jpg",
+            name: "Mrunal Chawda",
+            pos: "CTF Developer & Bug Bounty",
+            github: "https://github.com/chawdamrunal",
+            twitter: "https://twitter.com/mrunal110",
+            linkedin: "https://www.linkedin.com/in/chawdamrunal/",
+            instagram: "https://www.instagram.com/mrunal_chawda/",
+        }, {
+            image: "Rahul.jpg",
+            name: "Rahul Vaghela",
+            pos: "CTF Developer & Forensics",
+            github: "",
+            twitter: "",
+            linkedin: "",
+            instagram: "",
+        }, {
+            image: "Nilay.jpg",
+            name: "Nilay Shah",
+            pos: "CTF Developer & Forensics",
+            github: "",
+            twitter: "",
+            linkedin: "",
+            instagram: "",
         }, {
             image: "Kesha.jpg",
             name: "Kesha Kaneria",
@@ -317,32 +328,21 @@
             image: "Viren.jpg",
             name: "Viren Munjani",
             pos: "CTF Developer",
-            github: "",
-            twitter: "",
-            linkedin: "",
-            instagram: "",
+            linkedin: "https://www.linkedin.com/in/viren-munjani-170759170",
+
         }, {
-            image: "Rushi.PNG",
-            name: "Rushi Mamtora",
+            image: "Waris.jpg",
+            name: "Wariskhan Pathan",
             pos: "CTF Developer",
-            github: "",
-            twitter: "",
-            linkedin: "",
-            instagram: "",
-        }, {
-            image: "Mrunal.jpg",
-            name: "Mrunal Chawda",
-            pos: "CTF Developer",
-            github: "",
-            twitter: "",
-            linkedin: "",
-            instagram: "",
-        }];
+            github: "https://github.com/waris0210",
+            linkedin: "https://www.linkedin.com/in/wariskhan-pathan-9837a01a5",
+            instagram: "https://www.instagram.com/waris_0210/",
+        }, ];
 
         files.forEach(file => {
 
             var text = "";
-            text += '<div class="mb-3 ml-2 mr-5">' +
+            text += '<div class="mb-3">' +
                 '<div class="flip-card">' +
                 '<div class="flip-card-inner">' +
                 '<div class="flip-card-front">' +
@@ -350,20 +350,23 @@
                 '</div>' +
                 '<div class="flip-card-back">' +
                 '<h2>' + file.name + '</h2>' +
-                '<h5>' + file.pos + '</h5>' +
+                '<h5 class="text-grey">' + file.pos + '</h5>' +
                 '<div style="margin: 24px 0;">';
 
             if (file.hasOwnProperty("github")) {
-                text += '<a href="' + file.github + '"><i class="fa fa-github fa-2x text-white"></i></a>';
+                text += '<a href="' + file.github + '" target="_blank"><i class="fa fa-github fa-2x mr-2" style="color:whitesmoke;"></i></a>';
             }
             if (file.hasOwnProperty("twitter")) {
-                text += '<a href="' + file.twitter + '"><i class="fa fa-twitter fa-2x text-white"></i></a>';
+                text += '<a href="' + file.twitter + '" target="_blank"><i class="fa fa-twitter fa-2x text-white mr-2" style="color:whitesmoke;"></i></a>';
             }
             if (file.hasOwnProperty("linkedin")) {
-                text += '<a href="' + file.linkedin + '"><i class="fa fa-linkedin fa-2x text-white"></i></a>';
+                text += '<a href="' + file.linkedin + '" target="_blank"><i class="fa fa-linkedin fa-2x text-white mr-2" style="color:whitesmoke;"></i></a>';
             }
             if (file.hasOwnProperty("instagram")) {
-                text += '<a href="' + file.instagram + '"><i class="fa fa-instagram fa-2x text-white"></i></a>';
+                text += '<a href="' + file.instagram + '" target="_blank"><i class="fa fa-instagram fa-2x text-white mr-2" style="color:whitesmoke;"></i></a>';
+            }
+            if (file.hasOwnProperty("behance")) {
+                text += '<a href="' + file.behance + '" target="_blank"><i class="fa fa-behance fa-2x text-white mr-2" style="color:whitesmoke;"></i></a>';
             }
 
             text += '</div>' + '</div>' + '</div>' + '</div>' + '</div>';

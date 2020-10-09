@@ -35,20 +35,26 @@ function createFooter() {
 
 function createEvent() {
     let events = [{
+            status: "Upcoming Event",
             topic: "Introducing The Cyber Alliance",
             date: "12-10-2020",
             time: "04:00 PM - 06:00 PM",
             by: "The Cyber Alliance",
             description: "A perfect kickstart for your learning adventure...",
-            image: "media/events/1.png"
+            image: "media/events/event1.jpg",
+            link: "https://forms.gle/xV2ENBUAhtai6Nrz7",
+            disabled: ""
         },
         {
-            topic: "Introducing The Cyber Alliance",
-            date: "12-10-2020",
-            time: "04:00 PM - 06:00 PM",
-            by: "The Cyber Alliance",
-            description: "A perfect kickstart for your learning adventure...",
-            image: "media/events/1.png"
+            status: "Later Event",
+            topic: "Importance of Shell in Information Security",
+            date: "TBD",
+            time: "TBD",
+            by: "Viral Parmar",
+            description: "Shell is very handy thing which we Infosec geek use frequently so here we're with some trick and tips which help you in shell and save your time.",
+            image: "media/events/1.png",
+            link: "",
+            disabled: "disabled"
         },
     ];
 
@@ -59,20 +65,20 @@ function createEvent() {
             <li>
                 <div class="card">
                     <div class="card-header text-center">
-                        Past Event
+                        ` + event.status + `
                     </div>
                     <div>                        
-                        <div style="background-image: url('` + event.image + `');background-size: cover;padding: 10%;">
-                            <h4 class="card-title">` + event.topic + `</h4>
+                        <div>
+                            <img src="` + event.image + `" />
+                            <!--<h4 class="card-title">` + event.topic + `</h4>
                             <h5 class="card-subtitle mb-2 text-white-50">` + event.by + `</h5>
-                            <p class="card-text">` + event.description + `</p>
-                            <a href="#" class="btn btn-primary disabled">Register Now</a>
+                            <p class="card-text">` + event.description + `</p> -->
+                            <a href="` + (event.link === "" ? "#" : event.link) + `" target="_blank" class="btn btn-primary middle ` + event.disabled + `">Register Now</a>
                         </div>
                     </div>
                 </div>
             </li>
         `;
     });
-
     $("#target>ul").append(text);
 }
