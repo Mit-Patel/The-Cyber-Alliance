@@ -23,17 +23,16 @@
         margin: 0;
         height: 100%;
         /* overflow: hidden */
+        /* background-color: black; */
     }
     
-    .container-fluid {
+    .first-div {
         font-family: Courier;
         /* font-size: 1em; */
         position: absolute;
-        z-index: 100;
         width: 100%;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -30%);
+        top: 0%;
+        left: 0%;
     }
     
     .panel h1 {
@@ -46,6 +45,9 @@
     
     #particles-js {
         position: absolute;
+        left: 0%;
+        top: 0%;
+        height: 100vh;
     }
     
     .content::-webkit-scrollbar {
@@ -60,16 +62,18 @@
     }
 </style>
 
-<body>
+<body onload="handleWindowResize()" onresize="handleWindowResize()">
     <!-- particles.js container -->
-    <div id="particles-js">
-        <div class="container-fluid mt-3 content">
+    <header></header>
+    <div class="first-div">
+        <div id="particles-js"></div>
+        <div class="content">
             <div class="panel jumbotron bg-transparent mb-0 radius-0">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="display: flex;justify-content: center;align-items: center;">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="display: flex;justify-content: center;align-items: center;">
                         <img src="media/logo-2.png" alt="TCA Logo" width="500px">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                         <div>
                             <h1 class="display-2 text-white">The Cyber</h1>
                             <h1 class="display-2 text-white">Allianc<span class="vim-caret backWhite">e</span></h1>
@@ -88,11 +92,13 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="fixed-bottom pb-4 text-white text-center">
+    <footer>
+        <div class="fixed-bottom pb-2 pt-2 text-white text-center">
             In Association with Student Development Cell at <a href="https://rsu.ac.in/home/">Rashtriya Raksha University</a><br /> Managed by students of <a href="https://rsu.ac.in/school-of-information-technology-and-cyber-security/">SITAICS</a>
         </div>
-    </div>
+    </footer>
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -102,6 +108,7 @@
     <script>
         $(document).ready(function() {
             createNav(["active", "", "", "", "", ""], "fixed-top");
+            handleWindowResize(null);
         });
 
         function btnJoinClick(e) {
@@ -111,6 +118,14 @@
             } else {
                 alert("Oops! It's not the correct time to press that button. Try again later...");
             }
+        }
+
+        function handleWindowResize(e) {
+            $(".content").css({
+                "margin-top": $(".navbar").outerHeight(),
+                "margin-bottom": $(".fixed-bottom").outerHeight()
+            });
+
         }
     </script>
     <script src="js/particles.js"></script>

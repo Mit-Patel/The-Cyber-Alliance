@@ -1,7 +1,7 @@
 function createNav(activePage, fixed) {
     let text = `
-        <nav class="navbar navbar-expand-md navbar-dark  bg-transparent mb-0 radius-0 ` + fixed + `" style="font-family:Courier;">
-            <a href="#" class="navbar-brand">The Cyber Alliance</a>
+        <nav class="navbar navbar-expand-md navbar-dark  bg-dark mb-0 radius-0 ` + fixed + `" style="font-family:Courier;">
+            <a href="index.html" class="navbar-brand">The Cyber Alliance</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -19,7 +19,7 @@ function createNav(activePage, fixed) {
     `;
 
     if (activePage[0] === "active") {
-        $("#particles-js").append(text);
+        $("header").append(text);
     } else {
         $("header").append(text);
     }
