@@ -55,6 +55,14 @@
         word-wrap: normal;
     }
     
+    @media screen and (max-width: 600px) {
+        .center {
+            text-align: center;
+            padding: 0 30px;
+            word-wrap: normal;
+        }
+    }
+    
     .card {
         background-color: #32334a;
     }
@@ -69,15 +77,15 @@
 <body>
     <header></header>
     <section>
-        <div>
-            <div>
+        <div class="row">
+            <div class="col-md-12">
                 <h1 style="font-size:40px; font-family:courier;margin:30px;" align="center">Mission Statement</h1>
                 <p class="mt-5 text-spacy center">
                     <q><abbr title="TCA">The Cyber Alliance</abbr> is a student-run club at <abbr title="Raksha Shakti University">RSU</abbr>. The club’s main purpose is to prepare students for careers in private and public industries. To support students in their academic and career goals, the club organizes bi-weekly meetings where students are given technical and non-technical workshops/webinars to build their professional profiles and opportunities to get involved in teams to support operations within the Club. Moreover, the club will organize various <abbr title="Capture The Flag">CTF</abbr> competitions for the students so that they can show-off their skills. Also, for the students who are new to the Cyber Security field, the club will organize CTF sessions, where students can learn and play CTFs along with the experienced CTF players. In addition, the Club will partner with the local/international companies and organizations to bring real-world experiences into the hands of students through trainings, community engagement, and job placement.</q>
                 </p>
             </div>
             <hr>
-            <div>
+            <div class="col-md-12">
                 <h1 style="color:#00CED1;font-size:40px;font-family:Courier;margin:30px;margin-top: 50px;" align="center">Activities</h1>
                 <div class="card-deck center">
                     <div class="card card-body h-100 shadow p-3 mb-5 rounded" align="center">
@@ -115,35 +123,34 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="col-md-12">
                 <h4 style="color:#ADFF2F;font-family:courier;margin:0 30px;" align="center">More Activities Coming Soon...</h1>
             </div>
             <hr>
-            <div class="row center mb-5 mt-5">
-                <div class="col-md-6 col-sm-12">
-                    <div class="card reach-us" style="font-family:courier;height: 650px;">
+            <div class="row center mb-5 mt-5" style="width: 100%; margin-right: 0; margin-left: 0;">
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+                    <div class="card reach-us" style="font-family:courier;height: 750px;">
                         <div class="card-header font-weight-bold"><i class="fa fa-map-marker"></i> &nbsp;Contact Us</div>
-                        <div style="height: 400px;">
+                        <div style="height: 500px;">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14673.544368585306!2d72.8846204!3d23.1561046!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7ded5155dd1a3e61!2sRaksha%20Shakti%20University!5e0!3m2!1sen!2sin!4v1580035523590!5m2!1sen!2sin" style="border:0;"
-                                allowfullscreen="" width="100%" height="400px"></iframe>
+                                allowfullscreen="" width="100%" height="500px"></iframe>
                         </div>
-                        <div style="background-color: #031321;height: 100%;">
+                        <!-- 031321 -->
+                        <div style="background-color: transparent;height: 100%;">
                             <div style="margin: 15px 0;">
-                                <h5 class=" card-text"><strong>TCA - The Cyber Alliance, SITCS</strong></h5>
-                                <h6 class=" card-text"><strong>Raksha Shakti University</strong></h6>
+                                <h5 class=" card-text"><strong>TCA - The Cyber Alliance, SITAICS</strong></h5>
+                                <h6 class=" card-text"><strong>Rashtriya Raksha University</strong></h6>
 
                                 <p class="card-text">Lavad-Dahegam, Gandhinagar – 382305</p>
-                                <p class=" card-text mb-auto">
-                                    <b> Contact No.: </b> +91 90999 45683</p>
                                 <p class="card-text mb-auto">
-                                    <b>Email: </b><a href="mailto:patelmit2012@gmail.com">patelmit2012@gmail.com</a>
+                                    <b>Email: </b><a href="mailto:tca.sitaics@gmail.com">tca.sitaics@gmail.com</a>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="card reach-us" style="font-family:courier;height: 650px;">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card reach-us" style="font-family:courier;height: 750px;">
                         <div class="card-header font-weight-bold"><i class="fa fa-comments"></i> &nbsp;Give Your Feedback</div>
                         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScMJT_OLbjwUUY0QKtbH4sT2kqMh8-oOZiLhk-olDQ4wz7rbQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" style="background-color: rgb(255, 255, 255, 0.7)">Loading…</iframe>
                     </div>
