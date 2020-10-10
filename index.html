@@ -60,6 +60,25 @@
         scrollbar-width: none;
         /* Firefox */
     }
+    
+    .tca-logo {
+        width: 500px;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .display-2 {
+            font-size: 4rem;
+        }
+        .tca-logo {
+            width: 300px;
+            margin-bottom: 50px;
+        }
+        .tca-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 </style>
 
 <body onload="handleWindowResize()" onresize="handleWindowResize()">
@@ -71,9 +90,9 @@
             <div class="panel jumbotron bg-transparent mb-0 radius-0">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="display: flex;justify-content: center;align-items: center;">
-                        <img src="media/logo-2.png" alt="TCA Logo" width="500px">
+                        <img src="media/logo-2.png" class="tca-logo" alt="TCA Logo">
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 tca-content">
                         <div>
                             <h1 class="display-2 text-white">The Cyber</h1>
                             <h1 class="display-2 text-white">Allianc<span class="vim-caret backWhite">e</span></h1>
