@@ -23,6 +23,8 @@ function createNav(activePage, fixed) {
     } else {
         $("header").append(text);
     }
+
+    $("head").append(`<link rel="icon" type="image/png" href="media/favicon.png">`);
 }
 
 function createFooter() {
