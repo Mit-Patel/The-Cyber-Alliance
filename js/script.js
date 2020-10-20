@@ -37,23 +37,23 @@ function createFooter() {
 
 function createEvent() {
     let events = [{
-            status: "Upcoming Event",
+            status: "Past Event",
             topic: "Introducing The Cyber Alliance",
-            date: "12-10-2020",
-            time: "04:00 PM - 06:00 PM",
+            date: "17-10-2020",
+            time: "10:00 AM - 12:00 PM",
             by: "The Cyber Alliance",
             description: "A perfect kickstart for your learning adventure...",
             image: "media/events/event1.jpg",
-            link: "https://forms.gle/xV2ENBUAhtai6Nrz7",
-            disabled: ""
+            link: "#",
+            disabled: "disabled"
         },
         {
-            status: "Later Event",
-            topic: "Importance of Shell in Information Security",
+            status: "Upcoming Event",
+            topic: "Introduction to Linux and Shell",
             date: "TBD",
             time: "TBD",
             by: "Viral Parmar",
-            description: "Shell is very handy thing which we Infosec geek use frequently so here we're with some trick and tips which help you in shell and save your time.",
+            description: "Basic Linux and Shell Programming for absolute beginners...",
             image: "media/events/1.png",
             link: "",
             disabled: "disabled"
