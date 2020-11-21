@@ -50,13 +50,13 @@ function createEvent() {
         {
             status: "Upcoming Event",
             topic: "Introduction to Linux and Shell",
-            date: "TBD",
-            time: "TBD",
+            date: "22nd November, 2020",
+            time: "10:00 AM Onwards",
             by: "Viral Parmar",
             description: "Basic Linux and Shell Programming for absolute beginners...",
-            image: "media/events/1.png",
-            link: "",
-            disabled: "disabled"
+            image: "media/events/event2.png",
+            link: "https://forms.gle/zkvyNAePKpHK5iKu8",
+            disabled: ""
         },
     ];
 
