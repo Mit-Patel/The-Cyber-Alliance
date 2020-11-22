@@ -48,14 +48,27 @@ function createEvent() {
             disabled: "disabled"
         },
         {
-            status: "Upcoming Event",
+            status: "Past Event",
             topic: "Introduction to Linux and Shell",
             date: "22nd November, 2020",
             time: "10:00 AM Onwards",
             by: "Viral Parmar",
             description: "Basic Linux and Shell Programming for absolute beginners...",
             image: "media/events/event2.png",
-            link: "https://forms.gle/zkvyNAePKpHK5iKu8",
+            link: "",
+            leaderboard: "media/events/intro_to_linux_and_shell_contest_leaderboard.pdf",
+            disabled: ""
+        },
+        {
+            status: "Upcoming Event",
+            topic: "Introduction to CTF",
+            date: "TBD",
+            time: "TBD",
+            by: "TBD",
+            description: "Getting started with playing CTF for absolute beginners...",
+            image: "media/events/1.png",
+            link: "#",
+            leaderboard: "",
             disabled: ""
         },
     ];
@@ -75,7 +88,7 @@ function createEvent() {
                             <!--<h4 class="card-title">` + event.topic + `</h4>
                             <h5 class="card-subtitle mb-2 text-white-50">` + event.by + `</h5>
                             <p class="card-text">` + event.description + `</p> -->
-                            <a href="` + (event.link === "" ? "#" : event.link) + `" target="_blank" class="btn btn-primary middle ` + event.disabled + `">Register Now</a>
+                            <a href="` + (event.link === "" ? event.leaderboard : event.link) + `" target="_blank" class="btn btn-primary middle ` + event.disabled + `">` + (event.link === "" ? `View Leaderboard` : `Register Now`) + `</a>                            
                         </div>
                     </div>
                 </div>
