@@ -101,24 +101,22 @@ function createEvent() {
 
 function createPastEvents() {
     let events = [{
-            topic: "Introducing The Cyber Alliance",
-            day: "17",
-            month: "Oct",
-            year: "2020",
-            description: "A perfect kickstart for your learning adventure...",
-            image: "media/events/event1.jpg",
-            link: "#",
-        },
-        {
-            topic: "Introduction to Linux and Shell",
-            day: "22",
-            month: "Nov",
-            year: "2020",
-            description: "Basic Linux and Shell Programming for absolute beginners...",
-            image: "media/events/event2.png",
-            link: "#",
-        },
-    ];
+        topic: "Introduction to Linux and Shell",
+        day: "22",
+        month: "Nov",
+        year: "2020",
+        description: "Basic Linux and Shell Programming for absolute beginners...",
+        image: "media/events/event2.png",
+        link: "https://www.youtube.com/watch?v=xPAJf-tc80c",
+    }, {
+        topic: "Introducing The Cyber Alliance",
+        day: "17",
+        month: "Oct",
+        year: "2020",
+        description: "A perfect kickstart for your learning adventure...",
+        image: "media/events/event1.jpg",
+        link: "https://www.youtube.com/watch?v=GMWN6GJG7Og",
+    }, ];
 
     var text = "";
 
@@ -131,7 +129,7 @@ function createPastEvents() {
                 <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">` + event.month + `<span class="d-block">` + event.day + `</span>` + event.year + `</div>
                 <h5 class="font-weight-medium mt-3 ml-2 mr-2"><a href="` + event.link + `" class="text-decoration-none link">` + event.topic + `</a></h5>
                 <p class="text-grey mt-3 ml-2 mr-2">` + event.description + `</p>
-                <a href="` + event.link + `" class=" btn btn-primary disabled linking mt-2 mr-2 ml-2 mb-2">Register Now</a>
+                <a href="` + event.link + `" class=" btn btn-primary linking mt-2 mr-2 ml-2 mb-2" target="_blank">Watch Session</a>
             </div>
         </div>
         `;
@@ -171,7 +169,7 @@ function createUpcomingEvents() {
                 <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">` + event.month + `<span class="d-block">` + event.day + `</span>` + event.year + `</div>
                 <h5 class="font-weight-medium mt-3 ml-2 mr-2"><a href="` + event.link + `" class="text-decoration-none link">` + event.topic + `</a></h5>
                 <p class="text-grey mt-3 ml-2 mr-2">` + event.description + `</p>
-                <a href="` + event.link + `" class=" btn btn-primary linking mt-2 mr-2 ml-2 mb-2">Register Now</a>
+                <a href="` + event.link + `" class=" btn btn-primary linking mt-2 mr-2 ml-2 mb-2" target="_blank">Register Now</a>
             </div>
         </div>
         `;
