@@ -152,7 +152,7 @@ function createUpcomingEvents() {
         month: "Apr",
         year: "2021",
         description: "Getting started with playing CTF for absolute beginners...",
-        image: "media/events/1.png",
+        image: "media/events/event4.png",
         link: "https://meet.google.com/qiv-aqmf-jsp",
     }];
 
