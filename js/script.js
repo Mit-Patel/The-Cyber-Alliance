@@ -101,6 +101,14 @@ function createEvent() {
 
 function createPastEvents() {
     let events = [{
+        topic: "Introduction to Cyber Security",
+        day: "13",
+        month: "Dec",
+        year: "2020",
+        description: "An introductory session for absolute beginners in Cyber Security.",
+        image: "media/events/event3.png",
+        link: "#",
+    }, {
         topic: "Introduction to Linux and Shell",
         day: "22",
         month: "Nov",
@@ -139,24 +147,14 @@ function createPastEvents() {
 
 function createUpcomingEvents() {
     let events = [{
-            topic: "Introduction to Cyber Security",
-            day: "13",
-            month: "Dec",
-            year: "2020",
-            description: "An introductory session for absolute beginners in Cyber Security.",
-            image: "media/events/event3.png",
-            link: "https://forms.gle/r1aHHFa2qMDqx6Wp8",
-        },
-        /* {
-            topic: "Introduction to CTF",
-            day: "TBD",
-            month: "Dec",
-            year: "2020",
-            description: "Getting started with playing CTF for absolute beginners...",
-            image: "media/events/1.png",
-            link: "#",
-        } */
-    ];
+        topic: "Introduction to CTF",
+        day: "10",
+        month: "Apr",
+        year: "2021",
+        description: "Getting started with playing CTF for absolute beginners...",
+        image: "media/events/1.png",
+        link: "https://meet.google.com/qiv-aqmf-jsp",
+    }];
 
     var text = "";
 
