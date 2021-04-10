@@ -28,11 +28,11 @@ function createNav(activePage, fixed) {
 }
 
 function createFooter() {
-    // $("footer").append(`
-    //     <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin: 20px 0;text-align: center;color: rgb(255, 255, 255, 0.8);">
-    //         In Association with Student Development Cell at <a href="https://rsu.ac.in/home/">Rashtriya Raksha University</a><br /> Managed by students of <a href="https://rsu.ac.in/school-of-information-technology-and-cyber-security/">SITAICS</a>
-    //     </div>
-    // `);
+    $("footer").append(`
+        <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin: 20px 0;text-align: center;color: rgb(255, 255, 255, 0.8);">
+            In Association with Student Development Cell at <a href="https://rsu.ac.in/home/">Rashtriya Raksha University</a><br /> Managed by students of <a href="https://rsu.ac.in/school-of-information-technology-and-cyber-security/">SITAICS</a>
+        </div>
+    `);
 }
 
 function createEvent() {
@@ -106,8 +106,8 @@ function createPastEvents() {
         month: "Dec",
         year: "2020",
         description: "An introductory session for absolute beginners in Cyber Security.",
-        // image: "media/events/event3.png",
-        image: "media/events/1.png",
+        image: "media/events/event3.png",
+        // image: "media/events/1.png",
         link: "#",
     }, {
         topic: "Introduction to Linux and Shell",
@@ -115,8 +115,8 @@ function createPastEvents() {
         month: "Nov",
         year: "2020",
         description: "Basic Linux and Shell Programming for absolute beginners...",
-        // image: "media/events/event2.png",
-        image: "media/events/1.png",
+        image: "media/events/event2.png",
+        // image: "media/events/1.png",
         link: "https://www.youtube.com/watch?v=xPAJf-tc80c",
     }, {
         topic: "Introducing The Cyber Alliance",
@@ -124,8 +124,8 @@ function createPastEvents() {
         month: "Oct",
         year: "2020",
         description: "A perfect kickstart for your learning adventure...",
-        // image: "media/events/event1.jpg",
-        image: "media/events/1.png",
+        image: "media/events/event1.jpg",
+        // image: "media/events/1.png",
         link: "https://www.youtube.com/watch?v=GMWN6GJG7Og",
     }, ];
 
