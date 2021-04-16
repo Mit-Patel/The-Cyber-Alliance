@@ -127,7 +127,16 @@ function createPastEvents() {
         image: "media/events/event1.jpg",
         // image: "media/events/1.png",
         link: "https://www.youtube.com/watch?v=GMWN6GJG7Og",
-    }, ];
+    }, {
+        topic: "Introduction to CTF",
+        day: "10",
+        month: "Apr",
+        year: "2021",
+        description: "Getting started with playing CTF for absolute beginners...",
+        // image: "media/events/event4.png",
+        image: "media/events/1.png",
+        link: "#",
+    }];
 
     var text = "";
 
@@ -149,16 +158,7 @@ function createPastEvents() {
 }
 
 function createUpcomingEvents() {
-    let events = [{
-        topic: "Introduction to CTF",
-        day: "10",
-        month: "Apr",
-        year: "2021",
-        description: "Getting started with playing CTF for absolute beginners...",
-        // image: "media/events/event4.png",
-        image: "media/events/1.png",
-        link: "https://meet.google.com/qiv-aqmf-jsp",
-    }];
+    let events = [];
 
     var text = "";
 
