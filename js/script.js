@@ -101,6 +101,15 @@ function createEvent() {
 
 function createPastEvents() {
     let events = [{
+        topic: "Introduction to CTF",
+        day: "10",
+        month: "Apr",
+        year: "2021",
+        description: "Getting started with playing CTF for absolute beginners...",
+        // image: "media/events/event4.png",
+        image: "media/events/1.png",
+        link: "#",
+    }, {
         topic: "Introduction to Cyber Security",
         day: "13",
         month: "Dec",
@@ -127,15 +136,6 @@ function createPastEvents() {
         image: "media/events/event1.jpg",
         // image: "media/events/1.png",
         link: "https://www.youtube.com/watch?v=GMWN6GJG7Og",
-    }, {
-        topic: "Introduction to CTF",
-        day: "10",
-        month: "Apr",
-        year: "2021",
-        description: "Getting started with playing CTF for absolute beginners...",
-        // image: "media/events/event4.png",
-        image: "media/events/1.png",
-        link: "#",
     }];
 
     var text = "";
@@ -158,7 +158,15 @@ function createPastEvents() {
 }
 
 function createUpcomingEvents() {
-    let events = [];
+    let events = [{
+        topic: "Hands-On CTF Session",
+        day: "02",
+        month: "May",
+        year: "2021",
+        description: "Learn Basic Cryptography based CTF challenges.",
+        image: "media/events/1.png",
+        link: "https://meet.google.com/phu-ukhb-nkc",
+    }, ];
 
     var text = "";
 
