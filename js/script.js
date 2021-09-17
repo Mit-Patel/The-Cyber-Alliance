@@ -60,7 +60,7 @@ function createEvent() {
             disabled: ""
         },
         {
-            status: "Upcoming Event",
+            status: "Past Event",
             topic: "Introduction to CTF",
             date: "TBD",
             time: "TBD",
@@ -101,12 +101,20 @@ function createEvent() {
 
 function createPastEvents() {
     let events = [{
+        topic: "Hands-On CTF Session",
+        day: "02",
+        month: "May",
+        year: "2021",
+        description: "Learn Basic Cryptography based CTF challenges.",
+        image: "media/events/1.png",
+        link: "#",
+    }, {
         topic: "Introduction to CTF",
         day: "10",
         month: "Apr",
         year: "2021",
         description: "Getting started with playing CTF for absolute beginners...",
-        // image: "media/events/event4.png",
+        image: "media/events/event4.png",
         image: "media/events/1.png",
         link: "#",
     }, {
@@ -149,7 +157,7 @@ function createPastEvents() {
                 <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">` + event.month + `<span class="d-block">` + event.day + `</span>` + event.year + `</div>
                 <h5 class="font-weight-medium mt-3 ml-2 mr-2"><a href="` + event.link + `" class="text-decoration-none link">` + event.topic + `</a></h5>
                 <p class="text-grey mt-3 ml-2 mr-2">` + event.description + `</p>
-                <a href="` + event.link + `" class=" btn btn-primary linking mt-2 mr-2 ml-2 mb-2" target="_blank">Watch Session</a>
+                <!--<a href="` + event.link + `" class=" btn btn-primary linking mt-2 mr-2 ml-2 mb-2" target="_blank">Watch Session</a>-->
             </div>
         </div>
         `;
@@ -158,15 +166,7 @@ function createPastEvents() {
 }
 
 function createUpcomingEvents() {
-    let events = [{
-        topic: "Hands-On CTF Session",
-        day: "02",
-        month: "May",
-        year: "2021",
-        description: "Learn Basic Cryptography based CTF challenges.",
-        image: "media/events/1.png",
-        link: "https://meet.google.com/phu-ukhb-nkc",
-    }, ];
+    let events = [];
 
     var text = "";
 
