@@ -10,7 +10,7 @@ function createNav(activePage, fixed) {
                     <a href="index.html" class="nav-item nav-link ` + activePage[0] + ` px-3"><i class="fa fa-home"></i></i> Home</a>
                     <a href="about.html" class="nav-item nav-link ` + activePage[1] + ` px-3 "> <i class="fa fa-info"></i> About TCA</a>
                     <a href="events.html" class="nav-item nav-link ` + activePage[2] + ` px-3 "><i class="fa fa-calendar"></i> Events</a>
-                    <a href="news.html" class="nav-item nav-link ` + activePage[3] + ` px-3 "><i class="fa fa-trophy"></i> Awareness</a>
+                    <a href="news.html" class="nav-item nav-link ` + activePage[3] + ` px-3 "><i class="fa fa-bolt"></i> Awareness</a>
                     <a href="code-of-conduct.html" class="nav-item nav-link ` + activePage[4] + ` px-3  "><i class="fa fa-terminal"></i> Code of Conduct</a>
                     <a href="team-tca.html" class="nav-item nav-link ` + activePage[5] + ` px-3  "><i class="fa fa-users"></i> Team TCA</a>
                 </div>
