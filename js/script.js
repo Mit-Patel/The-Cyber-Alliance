@@ -10,7 +10,7 @@ function createNav(activePage, fixed) {
                     <a href="index.html" class="nav-item nav-link ` + activePage[0] + ` px-3"><i class="fa fa-home"></i></i> Home</a>
                     <a href="about.html" class="nav-item nav-link ` + activePage[1] + ` px-3 "> <i class="fa fa-info"></i> About TCA</a>
                     <a href="events.html" class="nav-item nav-link ` + activePage[2] + ` px-3 "><i class="fa fa-calendar"></i> Events</a>
-                    <a href="achievements.html" class="nav-item nav-link ` + activePage[3] + ` px-3 "><i class="fa fa-trophy"></i> Achievements</a>
+                    <a href="news.html" class="nav-item nav-link ` + activePage[3] + ` px-3 "><i class="fa fa-trophy"></i> Awareness</a>
                     <a href="code-of-conduct.html" class="nav-item nav-link ` + activePage[4] + ` px-3  "><i class="fa fa-terminal"></i> Code of Conduct</a>
                     <a href="team-tca.html" class="nav-item nav-link ` + activePage[5] + ` px-3  "><i class="fa fa-users"></i> Team TCA</a>
                 </div>
@@ -25,6 +25,29 @@ function createNav(activePage, fixed) {
     }
 
     $("head").append(`<link rel="icon" type="image/png" href="media/favicon.png">`);
+}
+
+function createSubNav(activePage, fixed) {
+    let text = `
+    <nav class="navbar navbar-expand-md navbar-dark  bg-dark mb-0 radius-0 " style="font-family:Courier;">
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse1">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse1">
+        <div class="navbar-nav ml-auto">
+            <a href="news.html" class="nav-item nav-link ` + activePage[0] + ` px-3"><i class="fa fa-newspaper-o"></i> News</a>
+            <a href="blog.html" class="nav-item nav-link ` + activePage[1] + ` px-3"> <i class="fa fa-rss-square"></i> Blog</a>
+            <a href="tools.html" class="nav-item nav-link ` + activePage[2] + ` px-3"><i class="fa fa-wrench"></i> Tools</a>
+            <a href="security-practices.html" class="nav-item nav-link ` + activePage[3] + ` px-3"><i class="fa fa-shield"></i> Security Practices</a>
+            <a href="quiz.html" class="nav-item nav-link` + activePage[4] + ` px-3"><i class="fa fa-question"></i> Quiz</a>
+        </div>
+    </div>
+</nav>
+    `;
+
+    $("#awareness").append(text);
+
+    // $("head").append(`<link rel="icon" type="image/png" href="media/favicon.png">`);
 }
 
 function createFooter() {
@@ -185,4 +208,42 @@ function createUpcomingEvents() {
         `;
     });
     $("#upcoming-events").append(text);
+}
+
+function createTools() {
+    let tools = [{
+            title: "Nmap",
+            desc: "Nmap is a free and open-source network scanner created by Gordon Lyon. Nmap is used to discover hosts and services on a computer network by sending packets and analyzing the responses. Nmap provides a number of features for probing computer networks, including host discovery and service and operating system detection.",
+            image: "https://nmap.org/images/sitelogo.png",
+            link: "https://nmap.org/",
+        },
+        {
+            title: "No More Ransom",
+            desc: "No More Ransom aims to help victims recover their encrypted files, raise awareness of the ransomware threat, and provide ransomware victims and the general public with direct links to report attacks.",
+            image: "media/tools/NoMoreRansom.png",
+            link: "https://www.nomoreransom.org/en/index.html",
+        },
+    ];
+
+    var text = "";
+
+    tools.forEach(tool => {
+        text += `
+        <div class="item mb-5 card bg-dark p-5 row">
+            <div class="media col-6">
+                <div class="media-body mr-5">
+                    <h3 class="title mb-2">` + tool.title + `</h3>
+                    <div class="intro mb-4 text-justify">` + tool.desc + `</div>
+                    <a class="btn btn-outline-primary" target="_blank" rel="noreferrer" href="` + tool.link + `">Read more →</a>
+                </div>
+            </div>
+            <div class="col-6">
+                <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="` + tool.image + `" alt="image">
+            </div>
+                <!--//media-body -->
+            <!--//media-->
+        </div>
+        `;
+    });
+    $("#tools").append(text);
 }
