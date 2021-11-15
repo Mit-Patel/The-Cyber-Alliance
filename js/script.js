@@ -39,7 +39,7 @@ function createSubNav(activePage, fixed) {
             <a href="blog.html" class="nav-item nav-link ` + activePage[1] + ` px-3"> <i class="fa fa-rss-square"></i> Blog</a>
             <a href="tools.html" class="nav-item nav-link ` + activePage[2] + ` px-3"><i class="fa fa-wrench"></i> Tools</a>
             <a href="security-practices.html" class="nav-item nav-link ` + activePage[3] + ` px-3"><i class="fa fa-shield"></i> Security Practices</a>
-            <a href="quiz.html" class="nav-item nav-link` + activePage[4] + ` px-3"><i class="fa fa-question"></i> Quiz</a>
+            <a class="nav-item nav-link disabled` + activePage[4] + ` px-3" data-toggle="tooltip" data-placement="bottom" title="Coming Soon" ><i class="fa fa-question"></i> Quiz</a>
         </div>
     </div>
 </nav>
@@ -238,7 +238,7 @@ function createTools() {
     let tools = [{
             title: "Nmap",
             desc: "Nmap is a free and open-source network scanner created by Gordon Lyon. Nmap is used to discover hosts and services on a computer network by sending packets and analyzing the responses. Nmap provides a number of features for probing computer networks, including host discovery and service and operating system detection.",
-            image: "https://nmap.org/images/sitelogo.png",
+            image: "media/tools/nmap.png",
             link: "https://nmap.org/",
         },
         {
@@ -247,22 +247,64 @@ function createTools() {
             image: "media/tools/NoMoreRansom.png",
             link: "https://www.nomoreransom.org/en/index.html",
         },
+        {
+            title: "Autopsy",
+            desc: "Autopsy analyzes major file systems (NTFS, FAT, ExFAT, HFS+, Ext2/Ext3/Ext4, YAFFS2) by hashing all files, unpacking standard archives (ZIP, JAR etc.), extracting any EXIF values and putting keywords in an index. Some file types like standard email formats or contact files are also parsed and cataloged.",
+            image: "media/tools/Autopsy.png",
+            link: "https://www.sleuthkit.org/autopsy",
+        },
+        {
+            title: "Maltego",
+            desc: "Maltego is software used for open-source intelligence and forensics, developed by Paterva from Pretoria, South Africa. Maltego focuses on providing a library of transforms for discovery of data from open sources, and visualizing that information in a graph format, suitable for link analysis and data mining",
+            image: "media/tools/Maltego.png",
+            link: "https://www.maltego.com/",
+        },
+        {
+            title: "Wireshark",
+            desc: "Wireshark is open-source network software that can efficiently analyze network protocols and enhance security in real-time. Since it is a console-based password auditing and packet sniffer tool, you can use this security software to sniff the network and monitor your network traffic in real-time. Security professionals use this efficient software to capture data packets and inspect the features that particular data packets exhibit, which further helps to identify the weaknesses in network security.",
+            image: "media/tools/Wireshark.jpg",
+            link: "https://www.wireshark.org/",
+        },
+        {
+            title: "Metalsploit",
+            desc: "Metasploit is one of the best security software that contains various tools for executing penetration testing services. Professionals use this tool to attain varying security goals such as discovering vulnerabilities in the system, strengthening computer system security, weaving cyber defense strategies, and maintaining complete security assessments. These penetration testing tools can examine the different security systems, including web-based apps, servers, networks, and so on. Metasploit can instantly identify all the new security vulnerabilities as soon as they occur, thus maintaining top-notch security all the time.",
+            image: "media/tools/metasploit.png",
+            link: "https://www.metasploit.com/",
+        },
+        {
+            title: "Nikto",
+            desc: "Nikto is an open-source security software used to detect web vulnerabilities and take appropriate actions accordingly. The software contains a database that includes around 6400 different threats. Security professionals keep updating this database so that the users may easily identify the new vulnerabilities.",
+            image: "media/tools/Nikto.png",
+            link: "https://github.com/sullo/nikto",
+        },
+        {
+            title: "Veracrypt",
+            desc: "VeraCrypt is a security tool for disk encryption. It runs on Windows, Mac OSX and Linux and creates a virtual encrypted disk within a file before mounting it as a real disk.",
+            image: "media/tools/veracrypt.png",
+            link: "https://www.veracrypt.fr/en/Home.html",
+        },
+        {
+            title: "OSSEC",
+            desc: "OSSEC is an open source, scalable and multi-platform Host-based Intrusion Detection System (HIDS), whose creators want to keep free for the foreseeable future.",
+            image: "media/tools/ossec.png",
+            link: "https://www.ossec.net/",
+        },
     ];
 
     var text = "";
 
     tools.forEach(tool => {
         text += `
-        <div class="item mb-5 card bg-dark p-5 row">
-            <div class="media col-6">
+        <div class="item mb-5 p-3 row">
+            <div class="media card bg-dark p-5 col-md-6 col-sm-12">
                 <div class="media-body mr-5">
                     <h3 class="title mb-2">` + tool.title + `</h3>
                     <div class="intro mb-4 text-justify">` + tool.desc + `</div>
                     <a class="btn btn-outline-primary" target="_blank" rel="noreferrer" href="` + tool.link + `">Read more →</a>
                 </div>
             </div>
-            <div class="col-6">
-                <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="` + tool.image + `" alt="image">
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center mt-sm-2">
+                <img class="img-fluid post-thumb rounded" src="` + tool.image + `" alt="image">
             </div>
                 <!--//media-body -->
             <!--//media-->
@@ -270,4 +312,42 @@ function createTools() {
         `;
     });
     $("#tools").append(text);
+}
+
+
+function createBlogs() {
+    let blogs = [{
+            title: "CYBER KILL CHAIN",
+            desc: "The Cyber kill chain, also known as CKC which is a phase-based cybersecurity model developed by Lockheed Martin in 2011.Similar in concept to the military’s model, it defines the steps used by cyber attackers in today’s cyber-based attacks. The theory is that by understanding each of these stages, defenders can better identify and stop attackers at each of the respective stages.The kill chain helps us understand and combat ransomware, security breaches, and advanced persistent attacks (APTs).",
+            posted_on: "10-11-2021",
+            link: "#",
+        },
+        {
+            title: "RED TEAM & BLUE TEAM",
+            desc: "A red team/blue team exercise is a cybersecurity assessment technique that uses simulated attacks to gauge the strength of the organization’s existing security capabilities and identify areas of improvement in a low-risk environment.A red team that uses real-world adversary tradecraft in an attempt to compromise the environment.A blue team that consists of incident responders who work within the security unit to identify, assess and respond to the intrusion.Red team/blue team simulations play an important role in defending the organization against a wide range of cyberattacks from today’s sophisticated adversaries.",
+            posted_on: "10-11-2021",
+            link: "#",
+        },
+    ];
+
+    var text = "";
+
+    blogs.forEach(blog => {
+        text += `
+        <div class="item mb-3 row">
+            <div class="media card bg-dark p-3 col-12">
+                <div class="media-body mr-5">
+                    <h3 class="title mb-2">` + blog.title + `</h3>
+                    <hr>
+                    <div class="intro mb-4 text-justify ellipsis">` + blog.desc + `</div>
+                    <a class="btn btn-outline-primary" target="_blank" rel="noreferrer" data-toggle="tooltip" data-placement="top" title="Coming Soon">Read more →</a>
+                </div>
+            </div>
+            <div class="card-footer small">
+        ` + blog.posted_on + `
+            </div>
+        </div>
+        `;
+    });
+    $("#blogs").append(text);
 }
