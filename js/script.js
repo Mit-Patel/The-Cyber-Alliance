@@ -50,6 +50,30 @@ function createSubNav(activePage, fixed) {
     // $("head").append(`<link rel="icon" type="image/png" href="media/favicon.png">`);
 }
 
+function createNav1(activePage, fixed) {
+    let text = `
+        <nav class="navbar navbar-expand-md navbar-dark  bg-dark mb-0 radius-0 ` + fixed + `" style="font-family:Courier;">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="news.html" class="nav-item nav-link ` + activePage[0] + ` px-3"><i class="fa fa-newspaper-o"></i> News</a>
+                    <a href="blog.html" class="nav-item nav-link ` + activePage[1] + ` px-3"> <i class="fa fa-rss-square"></i> Blog</a>
+                    <a href="tools.html" class="nav-item nav-link ` + activePage[2] + ` px-3"><i class="fa fa-wrench"></i> Tools</a>
+                    <a href="security-practices.html" class="nav-item nav-link ` + activePage[3] + ` px-3"><i class="fa fa-shield"></i> Security Practices</a>
+                    <a href="quiz.html" class="nav-item nav-link ` + activePage[4] + ` px-3"><i class="fa fa-question"></i> Quiz</a>
+                </div>
+            </div>
+        </nav>
+    `;
+
+    if (activePage[0] === "active") {
+        $("header").append(text);
+    } else {
+        $("header").append(text);
+    }
+
+    $("head").append(`<link rel="icon" type="image/png" href="media/favicon.png">`);
+}
+
 function createFooter() {
     $("footer").append(`
         <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin: 20px 0;text-align: center;color: rgb(255, 255, 255, 0.8);">
